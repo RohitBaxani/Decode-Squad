@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "716231441626",
+    "project_id": "decode-squad",
+    "storage_bucket": "decode-squad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716231441626:android:c5e92cb99759ce9362b9e3",
+        "android_client_info": {
+          "package_name": "com.example.decodesquad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716231441626-8tjahck98a6h2p8755gkun3kkk3jor4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_jDSHvm2Tl3utnJsw4ns5VVP1T_PB-CQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716231441626-8tjahck98a6h2p8755gkun3kkk3jor4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
