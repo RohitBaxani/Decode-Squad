@@ -29,20 +29,11 @@ So, you have to create a prototype that solves the issues mentioned above.
 <details>
   <summary>Click to expand !</summary>
   
-![Main Page](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/main%20page.png)
+<img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/main%20page.png" width="250" height="500"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Doctor%20Sign%20Up%20page.png" width="250" height="500"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Signup%20With%20Details.png" width="250" height="500"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Add%20Patient%20Page.png" width="250" height="500"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/a0e26a44c98081b5f6e1bfd57b2e625a900195c1/images/addpatient_with_details.png?raw=true" width="250" height="500"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Firebase.png" width="1020" height="620"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Authentication.png" width="1020" height="620"/>
 
-![DOCTOR SIGNUP PAGE](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Doctor%20Sign%20Up%20page.png) 
-
-![DOCTOR LOGIN PAGE](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Doctor%20Login%20Page.png)
-
-![PATIENT SIGN UP PAGE](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Signup%20Page.png)
-
-![PATIENT SIGN UP WITH DETAILS](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Signup%20With%20Details.png)
-
-![ADD PATIENT](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Add%20Patient%20Page.png)
-
-![ADD PATIENT WITH DETAILS](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/addpatient_with_details.png)
-
-![PATIENT FIREBASE](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Firebase.png)
-
-![AUTHENTICATION](https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Authentication.png)
