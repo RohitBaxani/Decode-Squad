@@ -25,5 +25,3 @@ So, you have to create a prototype that solves the issues mentioned above.
 - [@RohitBaxani](https://www.github.com/RohitBaxani)
 - [@vruddhitolia](https://www.github.com/vruddhi-bot)
 
-
-## This is test commit by kunal
