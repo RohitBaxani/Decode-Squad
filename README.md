@@ -25,6 +25,9 @@ So, you have to create a prototype that solves the issues mentioned above.
 - [@RohitBaxani](https://www.github.com/RohitBaxani)
 - [@vruddhitolia](https://www.github.com/vruddhi-bot)
 
+## Installation
+- [Click here](https://github.com/mayurrkukreja/Decode-Squad/releases/download/v1.0.1-alpha/app-release.apk) to install the App
+
 ## Screenshots
 <details>
   <summary>Click to expand !</summary>
@@ -38,5 +41,5 @@ So, you have to create a prototype that solves the issues mentioned above.
   <img src = "https://github.com/mayurrkukreja/Decode-Squad/blob/main/images/Screenshot_1644755448.png" width="250" height="500"/>
   <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Firebase.png" width="1020" height="620"/>
   <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Authentication.png" width="1020" height="620"/>
-  
+ 
 
