@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -10,16 +12,18 @@ class AddPatientPage extends StatefulWidget {
 
 class _AddPatientPageState extends State<AddPatientPage> {
   final _formKey = GlobalKey<FormState>();
+  final genController = TextEditingController();
 
   var name = "";
   var email = "";
-  var password = "";
+  var referral = "";
   var phonenumber = "";
   var age = "";
+  var description = "";
 
   final nameController = TextEditingController();
   final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  final despController = TextEditingController();
   final phonenumberController = TextEditingController();
   final ageController = TextEditingController();
 
@@ -27,16 +31,18 @@ class _AddPatientPageState extends State<AddPatientPage> {
   void dispose() {
     nameController.dispose();
     emailController.dispose();
-    passwordController.dispose();
+    despController.dispose();
     phonenumberController.dispose();
     ageController.dispose();
+    genController.dispose();
     super.dispose();
   }
 
   clearText() {
     nameController.clear();
     emailController.clear();
-    passwordController.clear();
+    despController.clear();
+    genController.clear();
     phonenumberController.clear();
     ageController.clear();
   }
@@ -49,8 +55,9 @@ class _AddPatientPageState extends State<AddPatientPage> {
         .add({
           'name': name,
           'email': email,
-          'password': password,
+          'referral': referral,
           'phonenumber': phonenumber,
+          'description': description,
           'age': age
         })
         .then((value) => print('UserAdded'))
@@ -113,22 +120,50 @@ class _AddPatientPageState extends State<AddPatientPage> {
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 10.0),
                   child: TextFormField(
-                    autocorrect: false,
-                    obscureText: true,
+                    autofocus: false,
                     decoration: InputDecoration(
-                      labelText: 'Password: ',
+                      labelText: 'Age: ',
                       labelStyle: TextStyle(fontSize: 20.0),
                       border: OutlineInputBorder(),
                       errorStyle:
                           TextStyle(color: Colors.redAccent, fontSize: 15),
                     ),
-                    controller: passwordController,
+                    maxLength: (3),
+                    controller: ageController,
                     validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'Please Enter Password';
+                      if (value == null ||
+                          !RegExp(r'^[0-9]*$').hasMatch(value) ||
+                          value.isEmpty) {
+                        return 'Please Enter Valid Age';
                       }
                       return null;
                     },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0),
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          labelText: "Generate Referral Code",
+                          labelStyle: TextStyle(fontSize: 20.0),
+                          border: OutlineInputBorder(),
+                          errorStyle:
+                              TextStyle(color: Colors.redAccent, fontSize: 15),
+                        ),
+                        controller: genController,
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          final code = generateCode();
+                          setState(() {
+                            genController.text = code;
+                          });
+                        },
+                        child: Text("Create New"),
+                      ),
+                    ],
                   ),
                 ),
                 Container(
@@ -159,19 +194,17 @@ class _AddPatientPageState extends State<AddPatientPage> {
                   child: TextFormField(
                     autofocus: false,
                     decoration: InputDecoration(
-                      labelText: 'Age: ',
+                      labelText: 'Description: ',
                       labelStyle: TextStyle(fontSize: 20.0),
                       border: OutlineInputBorder(),
                       errorStyle:
                           TextStyle(color: Colors.redAccent, fontSize: 15),
                     ),
-                    maxLength: (3),
-                    controller: ageController,
+                    maxLength: (120),
+                    controller: despController,
                     validator: (value) {
-                      if (value == null ||
-                          !RegExp(r'^[0-9]*$').hasMatch(value) ||
-                          value.isEmpty) {
-                        return 'Please Enter Valid Age';
+                      if (value == null || value.length < 19 || value.isEmpty) {
+                        return 'Please add more Description';
                       }
                       return null;
                     },
@@ -187,16 +220,17 @@ class _AddPatientPageState extends State<AddPatientPage> {
                           setState(() {
                             name = nameController.text;
                             email = emailController.text;
-                            password = passwordController.text;
+                            referral = genController.text;
                             age = ageController.text;
                             phonenumber = phonenumberController.text;
+                            description = despController.text;
                             addUser();
                             clearText();
                           });
                         }
                       },
                       child: Text(
-                        'Register',
+                        'Add Patient',
                         style: TextStyle(fontSize: 18.0),
                       ),
                     ),
@@ -212,5 +246,26 @@ class _AddPatientPageState extends State<AddPatientPage> {
                 ))
               ])),
         ));
+  }
+
+  String generateCode({
+    bool hasLetters = true,
+    bool hasNumbers = true,
+  }) {
+    final length = 11;
+    final lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz';
+    final lettersUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    final numbers = '0123456789';
+
+    String chars = '';
+    if (hasLetters) chars += '$lowerCaseLetters$lettersUpperCase';
+    if (hasNumbers) chars += '$numbers';
+    print(chars);
+
+    return List.generate(length, (index) {
+      final indexRandom = Random.secure().nextInt(chars.length);
+
+      return chars[indexRandom];
+    }).join('');
   }
 }
