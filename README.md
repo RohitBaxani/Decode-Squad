@@ -21,9 +21,7 @@ So, you have to create a prototype that solves the issues mentioned above.
 ## Contributors
 - [@mayurrkukreja](https://www.github.com/mayurrkukreja)
 - [@kunalw007](https://www.github.com/kunalw007)
-- [@zaynshaikh111](https://www.github.com/kunalw007)
 - [@RohitBaxani](https://www.github.com/RohitBaxani)
-- [@vruddhitolia](https://www.github.com/vruddhi-bot)
 
 ## Installation
 - [Click here](https://github.com/mayurrkukreja/Decode-Squad/releases/download/v1.0.1-alpha/app-release.apk) to install the App
