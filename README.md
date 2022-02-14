@@ -37,7 +37,7 @@ So, you have to create a prototype that solves the issues mentioned above.
   <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/a0e26a44c98081b5f6e1bfd57b2e625a900195c1/images/addpatient_with_details.png?raw=true" width="250" height="500"/>
   <img src = "https://github.com/mayurrkukreja/Decode-Squad/blob/main/images/Screenshot_1644755410.png" width="250" height="500"/>
   <img src = "https://github.com/mayurrkukreja/Decode-Squad/blob/main/images/Screenshot_1644755448.png" width="250" height="500"/>
-  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Firebase.png" width="1020" height="620"/>
-  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Authentication.png" width="1020" height="620"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Patient%20Firebase.png"/>
+  <img src = "https://github.com/RohitBaxani/Decode-Squad/blob/main/images/Authentication.png"/>
  
 
