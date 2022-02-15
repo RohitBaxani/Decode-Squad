@@ -24,7 +24,7 @@ So, you have to create a prototype that solves the issues mentioned above.
 - [@RohitBaxani](https://www.github.com/RohitBaxani)
 
 ## Installation
-- [Click here](https://github.com/mayurrkukreja/Decode-Squad/releases/download/v1.0.1-alpha/app-release.apk) to install the App
+- [Click here](https://github.com/mayurrkukreja/Decode-Squad/releases/download/v1.0.2-alpha/app-release.apk) to install the App
 
 ## Screenshots
 <details>
